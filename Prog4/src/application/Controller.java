@@ -49,15 +49,15 @@ public class Controller implements Initializable{
 	public void changePhoto() {
 		display.appendText(pizzas.getValue()+"\n");
 		if(pizzas.getValue().equals("BYO")) {
-			Image photo = new Image("Cheese.jpg");
+			Image photo = new Image("..\\..\\Cheese.jpg");
 			pizzaPhoto.setImage(photo);
 		}
 		else if(pizzas.getValue().equals("Deluxe")) {
-			Image photo = new Image("Deluxe.jpg");
+			Image photo = new Image("..\\..\\Deluxe.jpg");
 			pizzaPhoto.setImage(photo);
 		}
 		else {
-			Image photo = new Image("Hawaiian.jpg");
+			Image photo = new Image("..\\..\\Hawaiian.jpg");
 			pizzaPhoto.setImage(photo);
 		}
 	}
