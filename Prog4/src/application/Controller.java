@@ -111,8 +111,6 @@ public class Controller implements Initializable{
 			orderList.add(Haw);
 			display.appendText("SUCCESS your Hawaiian pizza: "+Haw.toString()+".  was added to the order!!\n");
 		}
-	
-		System.out.println(orderList.size());
 	}
 	
 	public void displayOrder(ActionEvent event) throws IOException {	
@@ -228,7 +226,6 @@ public class Controller implements Initializable{
 
 	public void getList(ArrayList<Pizza> order) {
 		orderList = order;
-		System.out.println(orderList.size());
 	}
 
 }
