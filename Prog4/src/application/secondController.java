@@ -43,10 +43,10 @@ public secondController() throws IOException {
 
 @Override
 public void initialize(URL location, ResourceBundle resources) {
-	Style.setCellValueFactory(new PropertyValueFactory<Pizza, String>("Style"));
-	Size.setCellValueFactory(new PropertyValueFactory<Pizza, String>("Size"));
-	Toppings.setCellValueFactory(new PropertyValueFactory<Pizza, ArrayList<String>>("Toppings"));
-	Price.setCellValueFactory(new PropertyValueFactory<Pizza, Integer>("Price"));
+	Style.setCellValueFactory(new PropertyValueFactory<Pizza, String>("style"));
+	Size.setCellValueFactory(new PropertyValueFactory<Pizza, String>("size"));
+	Toppings.setCellValueFactory(new PropertyValueFactory<Pizza, ArrayList<String>>("toppings"));
+	Price.setCellValueFactory(new PropertyValueFactory<Pizza, Integer>("price"));
 }
 	public void getPizzas(ArrayList<Pizza> pizzas){
 		Piz.addAll(pizzas);
