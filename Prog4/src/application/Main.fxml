@@ -15,21 +15,21 @@
    <center>
       <Pane prefHeight="700.0" prefWidth="700.0" BorderPane.alignment="CENTER">
          <children>
-            <ComboBox fx:id="pizzas" layoutX="43.0" layoutY="41.0" onAction="#changePhoto" prefWidth="150.0" value="Build Your Own" visibleRowCount="3" />
-            <ComboBox fx:id="sizes" layoutX="43.0" layoutY="108.0" prefWidth="150.0" promptText="Medium" visibleRowCount="3" />
+            <ComboBox fx:id="pizzas" layoutX="43.0" layoutY="41.0" onAction="#menuSettings" prefWidth="150.0" value="Build Your Own" visibleRowCount="3" />
+            <ComboBox fx:id="sizes" layoutX="43.0" layoutY="108.0" prefWidth="150.0" value="Medium" visibleRowCount="3" />
             <Label layoutX="43.0" layoutY="14.0" text="Pizza" />
             <Label layoutX="43.0" layoutY="80.0" text="Size" />
             <ImageView fx:id="pizzaPhoto" fitHeight="203.0" fitWidth="218.0" layoutX="285.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../Cheese.jpg" />
+                  <Image url="@Cheese.jpg" />
                </image>
             </ImageView>
             <TextArea fx:id="display" layoutY="597.0" prefHeight="104.0" prefWidth="700.0" />
             <ListView fx:id="allTops" layoutX="22.0" layoutY="259.0" prefHeight="330.0" prefWidth="178.0" />
             <ListView fx:id="selectedTops" layoutX="350.0" layoutY="263.0" prefHeight="326.0" prefWidth="180.0" />
-            <Button fx:id="addTops" layoutX="213.0" layoutY="338.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Add Toppings &gt;&gt;" />
-            <Button fx:id="removeTops" layoutX="214.0" layoutY="399.0" mnemonicParsing="false" text="&lt;&lt; Remove Topping" />
-            <Button fx:id="clearTops" layoutX="214.0" layoutY="466.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" text="Clear Toppings" />
+            <Button fx:id="addTops" layoutX="213.0" layoutY="338.0" mnemonicParsing="false" onAction="#addTopping" prefHeight="25.0" prefWidth="128.0" text="Add Toppings &gt;&gt;" />
+            <Button fx:id="removeTops" layoutX="214.0" layoutY="399.0" mnemonicParsing="false" onAction="#removeTopping" text="&lt;&lt; Remove Toppings" />
+            <Button fx:id="clearTops" layoutX="214.0" layoutY="466.0" mnemonicParsing="false" onAction="#clearToppings" prefHeight="25.0" prefWidth="127.0" text="Clear Toppings" />
             <Label layoutX="82.0" layoutY="231.0" text="Toppings">
                <font>
                   <Font size="14.0" />
@@ -40,8 +40,8 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Button fx:id="addToOrder" layoutX="567.0" layoutY="491.0" mnemonicParsing="false" text="Add To Order" />
-            <Button fx:id="showOrder" layoutX="567.0" layoutY="539.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Show Order" />
+            <Button fx:id="addToOrder" layoutX="567.0" layoutY="491.0" mnemonicParsing="false" onAction="#addToOrder" text="Add To Order" />
+            <Button fx:id="showOrder" layoutX="567.0" layoutY="539.0" mnemonicParsing="false" onAction="#displayOrder" prefHeight="25.0" prefWidth="89.0" text="Show Order" />
          </children></Pane>
    </center>
 </BorderPane>
